@@ -12,6 +12,7 @@ packages:
   wpmServer: https://packages.webmethods.io
   wpmRegistry: licensed
 - name: DADA_ExtendedProperty
+  version: "1.0"
   gitServerName: pGit
   gitUrl: https://github.com/ParmelaDohling579
   gitUsername: ParmelaDohling579
@@ -27,7 +28,7 @@ services:
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
-- serviceName: project.siqa_riba_git_2107.integrations:SIQAAdapterFlow
+- serviceName: project.siqa_riba_git_2107.integrations:Test_ExtendedProperty
   packages:
   - name: SIQA_RIBA_GIT_2107Project
     version: "1.0"
@@ -37,16 +38,10 @@ services:
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
-- serviceName: edge.siqaadapscaffold1696917055812_3f075c7f1bb146de8e2e3cb5fc1786a3_export.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:DBInsert
+- serviceName: DADA_ExtendedProperty:maxToStringLength
   packages:
-  - name: SIQA_RIBA_GIT_2107Project
-    version: "1.0"
   - name: DADA_ExtendedProperty
     version: "1.0"
-  - name: WmJDBCAdapter
-    version: 10.3.0.0.34
-    wpmServer: https://packages.webmethods.io
-    wpmRegistry: licensed
 configurationVariables:
   ? artConnection.SIQA_RIBA_GIT_2107Project.project.siqa_riba_git_2107.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1_Rima.connectionManagerSettings.maximumPoolSize
   : "10"
