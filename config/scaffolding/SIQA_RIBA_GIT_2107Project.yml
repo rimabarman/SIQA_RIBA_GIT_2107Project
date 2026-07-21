@@ -17,12 +17,19 @@ packages:
   gitUrl: https://github.com/ParmelaDohling579
   gitUsername: ParmelaDohling579
   gitBranch: main
+- name: MultiplyService_Public
+  gitServerName: rimaAZRepo_SC
+  gitUrl: https://dev.azure.com/RimaBarman/Rima_AZRepo_Project/_git
+  gitUsername: RimaBarman
+  gitBranch: main
 services:
-- serviceName: project.siqa_riba_git_2107.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:Database_1_Rima
+- serviceName: project.siqa_riba_git_2107.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:DBInsert
   packages:
   - name: SIQA_RIBA_GIT_2107Project
     version: "1.0"
   - name: DADA_ExtendedProperty
+    version: "1.0"
+  - name: MultiplyService_Public
     version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
@@ -33,6 +40,8 @@ services:
   - name: SIQA_RIBA_GIT_2107Project
     version: "1.0"
   - name: DADA_ExtendedProperty
+    version: "1.0"
+  - name: MultiplyService_Public
     version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
