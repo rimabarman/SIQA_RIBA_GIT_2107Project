@@ -7,6 +7,15 @@ packages:
   gitUrl: https://github.com/rimabarman
   gitUsername: rimabarman
   gitBranch: main
+services:
+- serviceName: project.siqa_riba_git_2107.integrations:SIQAAdapterFlow
+  packages:
+  - name: SIQA_RIBA_GIT_2107Project
+    version: "1.0"
+- serviceName: edge.siqaadapscaffold1696917055812_3f075c7f1bb146de8e2e3cb5fc1786a3_export.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:DBInsert
+  packages:
+  - name: pkg_3f075c7f1bb146de8e2e3cb5fc1786a3_exported
+    version: "1.0"
 configurationVariables:
   jdbcfunc.SAPTxStore.failFastMode: false
   jdbcfunc.SAPTxStore.connPoolAlias: SAP TxStore Pool
